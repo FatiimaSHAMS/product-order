@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script src="script/assignment007.js" defer></script>
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    </style> 
+</head>
+<body>
+    <header class="header">
+        <h1>Producr Order</h1>
+    </header>
+
+    <div class="main">
+        <h2>Product: Cotton T-Shirt</h2>
+        <div class="fgallery" style="float: left;">
+            <article id="imgBox">
+                <p id="imgS"></p>
+
+                <div class="black box">
+                    <div class="main-tile">
+                        <img src="product-images/t-shirt-black-back.jpg" alt="black-back" class="tile">
+                    </div>
+                    <div class="gallery" id="gallery">
+                        <a href="product-images/t-shirt-black-front.jpg">
+                            <img src="product-images/t-shirt-black-front.jpg" alt="black-front">
+                        </a>
+                        <a href="product-images/t-shirt-black-no-model.jpg">
+                            <img src="product-images/t-shirt-black-no-model.jpg" alt="black-no-model">
+                        </a>
+                        <a href="product-images/t-shirt-black-back.jpg">
+                            <img src="product-images/t-shirt-black-back.jpg" alt="black-back">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grey box">
+                    <div class="main-tile">
+                        <img src="product-images/t-shirt-grey-back.jpg" alt="grey-back" class="tile">
+                    </div>
+                    <div class="gallery" id="gallery">
+                        <a href="product-images/t-shirt-grey-front.jpg">
+                            <img src="product-images/t-shirt-grey-front.jpg" alt="grey-front">
+                        </a>
+                        <a href="product-images/t-shirt-grey-no-model.jpg">
+                            <img src="product-images/t-shirt-grey-no-model.jpg" alt="grey-no-model">
+                        </a>
+                        <a href="product-images/t-shirt-grey-back.jpg">
+                            <img src="product-images/t-shirt-grey-back.jpg" alt="grey-back">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="red box">
+                    <div class="main-tile">
+                        <img src="product-images/t-shirt-red-back.jpg" alt="red-back" class="tile">
+                    </div>
+                    <div class="gallery" id="gallery">
+                        <a href="product-images/t-shirt-red-front.jpg">
+                            <img src="product-images/t-shirt-red-front.jpg" alt="red-front">
+                        </a>
+                        <a href="product-images/t-shirt-red-no-model.jpg">
+                            <img src="product-images/t-shirt-red-no-model.jpg" alt="red-no-model">
+                        </a>
+                        <a href="product-images/t-shirt-red-back.jpg" alt="back-red">  
+                            <img src="product-images/t-shirt-red-back.jpg" alt="red-back">
+                        </a>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+
+
+        <div class="form">
+            <form id="form" action="script/result.html" method="post">
+                <article id="priceBox" ><span class="number">1</span>
+                    <label id="price"></label> <br>
+                    <label>Quantity: </label>
+                    <input id="quantity" type="number" min="0" value="1" name="quantity"> <br>
+                    <label id="total"></label>
+                </article>
+
+                <article id="colorBox" ><span class="number">2</span>
+                    <label id="color"></label> <br>
+                    <input id="default" class="show" type="radio" name="color" value="black" checked> Black <br>
+                    <input class="show" type="radio" name="color" value="red"> Red  <br>
+                    <input class="show" type="radio" name="color" value="grey"> Grey <br>
+                    </article>
+
+                <article id="sizeBox" ><span class="number">3</span>
+                    <label id="size"></label>
+                    <label id="sizes"> size: choose... </label> <br>
+                    <input id="size" type="radio" name="size" value="small"> Small S <br>
+                    <input id="size1" type="radio" name="size" value="medium"> Medium M <br>
+                    <input id="size2" type="radio" name="size" value="large"> Large L <br>
+                </article>
+
+                <article id="sub">
+                    <input type="submit" id="submit" value="size: choose...">
+                </article>
+            </form>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>Resize the browser window to see how the content respond to the resizing.</p>
+            
+    </footer>
+</body>
+</html>
